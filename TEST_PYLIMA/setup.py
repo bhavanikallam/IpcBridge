@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 project_path = os.path.dirname(__file__)
 
 install_requires = []
-with open(os.path.join(project_path, "requirements.txt"), encoding="utf-8") as fh:
+with open(os.path.join(project_path, "apps/Bridge/requirements.txt"), encoding="utf-8") as fh:
     for line in fh:
         req_packages = line.strip()
         if not req_packages.startswith(('pip', 'setuptools', 'six', 'wheel')):
